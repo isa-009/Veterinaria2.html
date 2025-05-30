@@ -1,0 +1,134 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><html>
+<head>
+  <title>Veterinaria Animales Contentos</title>
+  <style>
+    body {
+      background-color: pink;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav li {
+      display: inline;
+      margin-right: 10px;
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+    .producto {
+      border: 1px solid black;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    .producto img {
+      width: 100px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 15px;
+      background-color: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function mostrarMensaje() {
+      alert("Gracias por visitar nuestra veterinaria.");
+    }
+
+    function toggleCatalogo() {
+      var catalogo = document.getElementById("catalogo");
+      var boton = document.getElementById("botonCatalogo");
+
+     (catalogo.style.display === "none") {
+        catalogo.style.display = "block";
+        boton.textContent = "Ocultar catálogo";
+      } else {
+        catalogo.style.display = "none";
+        boton.textContent = "Mostrar catálogo";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Veterinaria Animales Contentos</h1>
+
+  <nav>
+    <ul>
+      <li><a href="#quienes-somos">Quiénes somos</a></li>
+      <li><a href="#catalogo">Catálogo</a></li>
+    </ul>
+  </nav>
+
+  <section id="quienes-somos">
+    <p>Somos una clínica dedicada al cuidado de tus mascotas. ¡Te esperamos!</p>
+  </section>
+
+  <h2>Servicios</h2>
+  <ul>
+    <li>Consulta médica</li>
+    <li>Vacunación</li>
+    <li>Cirugías</li>
+    <li>Estética</li>
+    <li>Desparasitación</li>
+  </ul>
+
+  <h2>Horarios</h2>
+  <table>
+    <tr><th>Día</th><th>Horario</th></tr>
+    <tr><td>Lun-Vie</td><td>9:00 - 18:00</td></tr>
+    <tr><td>Sábado</td><td>9:00 - 14:00</td></tr>
+    <tr><td>Domingo</td><td>Cerrado</td></tr>
+  </table>
+  <button id="botonCatalogo" onclick="toggleCatalogo()">Ocultar catálogo</button>
+
+  <section id="catalogo">
+    <h2>Catálogo</h2>
+
+    <div class="producto">
+      <img src="https://images.app.goo.gl/gsd3cEaH6ePymYk29" alt="Croquetas para perro">
+      <p><strong>Nombre:</strong> Croquetas Premium</p>
+      <p><strong>Precio:</strong> $300</p>
+      <p><strong>Descripción:</strong> Alimento completo para perros adultos.</p>
+    </div>
+  <div class="producto">
+      <img src="https://images.app.goo.gl/njMhPMS8aDDkt3Tw7" alt="Croquetas para gato">
+      <p><strong>Nombre:</strong> Alimento Gato Felix</p>
+      <p><strong>Precio:</strong> $250</p>
+      <p><strong>Descripción:</strong> Nutrición ideal para gatos caseros.</p>
+    </div>
+    <div class="producto">
+      <img src="https://images.app.goo.gl/LMCoS46uD7jS83R29" alt="Alimento cachorro">
+      <p><strong>Nombre:</strong> Croquetas Cachorro</p>
+      <p><strong>Precio:</strong> $280</p>
+      <p><strong>Descripción:</strong> Ideal para el crecimiento sano de tu cachorro.</p>
+    </div>
+        <div class="producto">
+      <img src="https://images.app.goo.gl/ruoWH77aSJYUzwqS6"alt="Alimento light">
+      <p><strong>Nombre:</strong> Alimento Light</p>
+      <p><strong>Precio:</strong> $320</p>
+      <p><strong>Descripción:</strong> Para mascotas con control de peso.</p>
+    </div>
+<div class="producto">
+      <img src="https://images.app.goo.gl/1abewEEM1h6RbRT19" alt="Alimento especial">
+      <p><strong>Nombre:</strong> Alimento Especial</p>
+      <p><strong>Precio:</strong> $350</p>
+      <p><strong>Descripción:</strong> Recomendado para animales con alergias.</p>
+    </div>
+  </section>
+  <h2>Contacto</h2>
+  <p>Dirección: Calle Animales Contentos #279</p>
+  <p>Tel: (123) 456-7890</p>
+
+  <button onclick="mostrarMensaje()">Haz clic aquí</button>
+</body>
+</html>
